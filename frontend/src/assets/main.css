@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #eef2ff 0%, #f7f4ff 100%);
+  color: #1f2937;
+}
+.container {
+  width: min(1200px, 94vw);
+  margin: 24px auto;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+.fade-in {
+  animation: fade-in .35s ease;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
